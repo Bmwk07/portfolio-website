@@ -4,6 +4,9 @@ Primary Color (Blue): #519DDB;
 Secondary Color (Gray): #E4E0E0;
 Secondary Color (Dark Blue): #053E73;
 */
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Lato', sans-serif;
@@ -83,6 +86,7 @@ a.button:active { /* selected link */
   color: #519DDB !important;
   text-transform: uppercase;
   border: 2px solid #519DDB;
+  display: inline-block;
 }
 .button.contact:visited {
   color: #043058;
@@ -99,8 +103,99 @@ a.button:active { /* selected link */
 a.button.contact:active { /* selected link */
   color: #043058;
 }
-header {
-  background-color: #E4E0E0;
+footer {
+  display: inline-block;
+  width: 100%;
   padding: 10px;
-  margin: 10px
+  text-align: center;
+}
+header {
+  background-color: #F8F8F8;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  -webkit-box-shadow: 0px 5px 3px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 5px 3px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 5px 3px 0px rgba(50, 50, 50, 0.75);
+  width: 100%;
+}
+main {
+  padding-top: 106.05px;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  border-bottom: 1px solid #519DDB;
+  padding-bottom: 25px;
+}
+#my-work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+#hero h1 {
+  text-align: center; /* Centers text */
+  display: inline-block;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#hero h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+}
+#hero h3 {
+  text-align: left; /* Centers text */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
+}
+#hero p {
+  margin-top: 5px;
+}
+#hero {
+  background-color: #F8F8F8;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+#tagline h3 {
+  text-align: center;
+  font-weight: 300;
+}
+#about-breanna h2 {
+  text-align: center;
+}
+.logo {
+  max-width: 250px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li> a {
+  padding: 0 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #519DDB;
+}
+nav > ul > li > a:visited {
+  color: #053E73
+}
+nav > ul > li > a:hover {
+  color: #053E73;
+  text-decoration: underline;
+}
+nav > ul > li > a:active {
+  color: #053E73;
+  font-weight: #519DDB;
+}
+#hero.container h3 {
+  text-align: center; /* Centers text */
 }
