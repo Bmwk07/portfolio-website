@@ -45,6 +45,8 @@ h4 {
   font-weight: 400;
 }
 
+
+/*navigation*/
 a {
   color: #519DDB;
   text-decoration: none; /* No underlining */
@@ -64,6 +66,34 @@ a:focus {
   color: #053E73;
   text-decoration: none;
 }
+
+/*updated navigation*/
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li> a {
+  padding: 0 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #519DDB;
+}
+nav > ul > li > a:visited {
+  color: #053E73
+}
+nav > ul > li > a:hover {
+  color: #053E73;
+  text-decoration: underline;
+}
+nav > ul > li > a:active {
+  color: #053E73;
+  font-weight: #519DDB;
+}
+
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #519DDB;
@@ -180,30 +210,6 @@ main {
 .logo {
   max-width: 250px;
 }
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-nav > ul > li {
-  display: inline-block;
-}
-nav > ul > li> a {
-  padding: 0 12px;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #519DDB;
-}
-nav > ul > li > a:visited {
-  color: #053E73
-}
-nav > ul > li > a:hover {
-  color: #053E73;
-  text-decoration: underline;
-}
-nav > ul > li > a:active {
-  color: #053E73;
-  font-weight: #519DDB;
-}
 #hero.container h3 {
   text-align: center; /* Centers text */
 }
@@ -257,6 +263,13 @@ Medium devices (640px and larger)
   body {
     font-size: 18px
   }
+  #hero h1 {
+    text-align: center; /* Centers text */
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
   .col-md-6 {
   width: 50%;
@@ -272,15 +285,122 @@ Medium devices (640px and larger)
   content: "";
   clear: both;
   display: table;
-}
+  }
+
+  #my-work h2{
+    text-align: center;
+  }
+
+  #my-work h3{
+    text-align: left;
+    margin-top: 0px;
+  }
+
+  .Tools h3{
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    padding-left: 0px;
+
+  }
+  .tools ul {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    padding-left: 0px;
+    text-decoration-color: #519DDB;
+  }
+
+  #about-breanna h3 { margin-top: 0;}
+
+  #skills h3 {
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    padding-left: 0px;
+  }
+
+  #skills .row { padding-bottom: 10px; border-bottom: 0px solid #4a4a4a;
+    }
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%
+  }
+
+  .col-lg-5 {
+    width: 40%
+  }
+
+  [class*="col-"] {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+}
+
+
+
+/* CSS Animation*/
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation-duration: 34s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
