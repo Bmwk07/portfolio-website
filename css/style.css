@@ -67,14 +67,13 @@ a:focus {
   text-decoration: none;
 }
 
-/*updated navigation*/
+/*updated navigation styles*/
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-nav > ul > li {
-  display: inline-block;
-}
+
 nav > ul > li> a {
   padding: 0 12px;
   text-transform: uppercase;
@@ -92,6 +91,36 @@ nav > ul > li > a:active {
   color: #053E73;
   font-weight: #519DDB;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+  padding: 0 0 10px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+
+/*END updated navigation styles*/
 
 
 .button {
@@ -141,8 +170,7 @@ footer {
 }
 header {
   background-color: #F8F8F8;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 8px;
   position: fixed;
   -webkit-box-shadow: 0px 5px 3px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px 5px 3px 0px rgba(50, 50, 50, 0.75);
@@ -150,8 +178,10 @@ header {
   width: 100%;
 }
 main {
-  padding-top: 106.05px;
+  padding-top: 45px;
 }
+
+
 
 /* Layout styling */
 .container {
@@ -208,7 +238,7 @@ main {
   text-align: center;
 }
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   background-color: #F8F8F8;
   padding-top: 10px;
 }
@@ -267,6 +297,23 @@ Medium devices (640px and larger)
   body {
     font-size: 18px
   }
+
+  nav > ul {
+  margin: 1em 0;
+}
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
   .logo {
     max-width: 250px;
     background-color: #F8F8F8;
@@ -334,6 +381,16 @@ Medium devices (640px and larger)
 
   #skills .row { padding-bottom: 10px; border-bottom: 0px solid #4a4a4a;
     }
+
+    .logo {
+      max-width: 250px;
+      background-color: #F8F8F8;
+      padding-top: 17px;
+    }
+
+    main {
+      padding-top: 104px;
+    }
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -358,11 +415,17 @@ Large devices (1024px or larger)
   clear: both;
   display: table;
   }
-  
+
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .logo {
+    max-width: 250px;
+    background-color: #F8F8F8;
+    padding-top: 17px;
   }
 
 }
@@ -370,6 +433,11 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+  .logo {
+    max-width: 250px;
+    background-color: #F8F8F8;
+    padding-top: 17px;
+  }
 }
 
 
