@@ -209,6 +209,8 @@ main {
 }
 .logo {
   max-width: 250px;
+  background-color: #F8F8F8;
+  padding-top: 10px;
 }
 #hero.container h3 {
   text-align: center; /* Centers text */
@@ -256,12 +258,21 @@ Medium devices (640px and larger)
 
   nav {
     width: auto;
-    float: right
-    margin-top: 4px;
+    display: flex;
+    float: right;
+    list-style: none;
+    margin-top: 0px;
   }
 
   body {
     font-size: 18px
+  }
+  .logo {
+    max-width: 250px;
+    background-color: #F8F8F8;
+    float:left;
+    padding-top: 20px;
+
   }
   #hero h1 {
     text-align: center; /* Centers text */
@@ -347,7 +358,12 @@ Large devices (1024px or larger)
   clear: both;
   display: table;
   }
-
+  
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }
 /* ==============================
