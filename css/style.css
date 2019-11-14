@@ -308,10 +308,16 @@ Medium devices (640px and larger)
 
   .navtoggle li:not(:last-child) {
   display: inline-block;
+  padding: 0px;
+  border-top: none;
 }
 
 .navtoggle li:last-child {
   display: none;
+
+}
+.navtoggle.responsive nav {
+  padding: 0px 0 0;
 }
 
   .logo {
