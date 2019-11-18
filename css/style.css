@@ -11,21 +11,23 @@ Secondary Color (Dark Blue): #053E73;
 body {
   font-family: 'Lato', sans-serif;
 }
+
 img {
   width: 100%;
 }
+
 body {
-  background-color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  background-color: white;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  line-height: 1.6;/* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
 
-h1, h2, h3, h4 {
+h1 h2 h3 h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -40,56 +42,64 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
 
-
-/*navigation*/
+/* navigation */
 a {
-  color: #519DDB;
-  text-decoration: none; /* No underlining */
+  color: #666;
+  text-decoration: none; /* no underlining */
 }
+
 a:hover {
-  color: #053E73;
+  color: #053e73;
   text-decoration: none;
 }
-a:visited { /* visited link */
-  color: #519DDB;
+
+a:visited {
+  /* visited link */
+  color: #519ddb;
 }
-a:active { /* selected link */
-  color: #043058;
+
+a:active {
+  /* selected link */
+  color: #666;
 }
+
 a:hover,
 a:focus {
-  color: #053E73;
+  color: #053e73;
   text-decoration: none;
 }
 
-/*updated navigation styles*/
+/* updated navigation styles */
 nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li> a {
+nav > ul > li > a {
   padding: 0 12px;
   text-transform: uppercase;
-  font-weight: 400;
-  color: #519DDB;
+  font-weight: 300;
+  color: #666;
 }
+
 nav > ul > li > a:visited {
-  color: #053E73
+  color: #053e73;
 }
+
 nav > ul > li > a:hover {
-  color: #053E73;
+  color: #666;
   text-decoration: underline;
 }
+
 nav > ul > li > a:active {
-  color: #053E73;
-  font-weight: #519DDB;
+  color: #053e73;
 }
 
 .navtoggle li:not(:last-child) {
@@ -97,108 +107,121 @@ nav > ul > li > a:active {
   padding: 0 0 10px;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle .navtoggle.responsive {
   position: relative;
 }
 
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: 10px;
   font-size: 20px;
-  padding-right: 0;
+  padding-right: 15px;
 }
 
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #E4E0E0;
+  border-top: 1px solid #e4e0e0;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
-
-/*END updated navigation styles*/
-
-
+/* END updated navigation styles */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #519DDB;
-  color: #ffffff !important; /* needed to override the default link color */
+  background-color: #277bbe;
+  color: #fff !important; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #043058; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-a.button:active { /* selected link */
+
+a.button:active {
+  /* selected link */
   color: #043058;
 }
+
 .button.contact {
   background-color: transparent;
-  color: #519DDB !important;
+  color: #277bbe !important;
   text-transform: uppercase;
-  border: 2px solid #519DDB;
+  border: 2px solid #277bbe;
   display: inline-block;
 }
+
 .button.contact:visited {
-  color: #043058;
+  color: #277bbe;
   text-decoration: none;
 }
+
 .button.contact:hover {
-  background-color: #519DDB;
-  color: #ffffff !important;
+  background-color: #519ddb;
+  color: #fff !important;
 }
+
 .button.contact:focus {
-  color: #519DDB
-  text-decoration:none;
+  color: #519ddb;
+  text-decoration: none;
 }
-a.button.contact:active { /* selected link */
-  color: #043058;
+
+a.button.contact:active {
+  /* selected link */
+  color: #277bbe;
 }
+
 footer {
   display: inline-block;
   width: 100%;
   padding: 10px;
   text-align: center;
 }
+
 header {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   padding: 10px 0 8px;
   position: fixed;
-  -webkit-box-shadow: 0px 5px 3px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    0px 5px 3px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         0px 5px 3px 0px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 0 5px 3px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0 5px 3px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 0 5px 3px 0 rgba(50, 50, 50, 0.75);
   width: 100%;
 }
+
 main {
   padding-top: 45px;
 }
-
-
 
 /* Layout styling */
 .container {
   padding: 0 15px;
 }
+
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
-  border-bottom: 1px solid #519DDB;
+  border-bottom: 1px solid #519ddb;
   padding-bottom: 25px;
 }
+
 .row-above {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
-  border-top: 1px solid #519DDB;
+  border-top: 1px solid #519ddb;
   padding-top: 25px;
 }
-#my-work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+
+#my-work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
+
 #hero h1 {
   text-align: center; /* Centers text */
   display: inline-block;
@@ -206,11 +229,13 @@ main {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 #hero h2 {
   margin-top: 30px;
   margin-bottom: 10px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
+
 #hero h3 {
   text-align: left; /* Centers text */
   margin-top: 10px;
@@ -218,63 +243,76 @@ main {
   display: inline-block;
   width: 100%;
 }
+
 #hero p {
   margin-top: 5px;
 }
+
 #hero {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
+
 #tagline h3 {
   text-align: center;
   font-weight: 300;
 }
+
 #about-breanna h2 {
   text-align: center;
 }
+
 #skills h3 {
   text-align: center;
 }
+
 .logo {
   max-width: 150px;
-  background-color: #F8F8F8;
-  padding-top: 10px;
+  background-color: #f8f8f8;
+  padding-top: 4px;
 }
+
 #hero.container h3 {
   text-align: center; /* Centers text */
 }
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
   width: 33.33%;
   padding: 5px;
 }
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column2 {
   float: left;
   width: 50%;
   padding: 5px;
 }
+
 /* Clear floats after image containers */
 .row2::after {
   content: "";
   clear: both;
   display: table;
 }
+
 .resume {
   text-align: center;
 }
+
 .tools {
   text-align: center;
 }
+
 .tools ul {
   width: 70%;
   margin: auto;
   text-align: center;
-  padding-left: 0px;
-  text-decoration-color: #519DDB;
+  padding-left: 0;
+  text-decoration-color: #519ddb;
 }
 
 /* ==============================
@@ -291,42 +329,42 @@ Medium devices (640px and larger)
     display: flex;
     float: right;
     list-style: none;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   body {
-    font-size: 18px
+    font-size: 18px;
   }
 
   nav > ul {
-  margin: 1em 0;
-}
+    margin: 1em 0;
+  }
 
   nav > ul > li {
     display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-  padding: 0px;
-  border-top: none;
-}
+    display: inline-block;
+    padding: 0;
+    border-top: none;
+  }
 
-.navtoggle li:last-child {
-  display: none;
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-}
-.navtoggle.responsive nav {
-  padding: 0px 0 0;
-}
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
 
   .logo {
     max-width: 250px;
-    background-color: #F8F8F8;
-    float:left;
-    padding-top: 20px;
-
+    background-color: #f8f8f8;
+    float: left;
+    padding-top: 8px;
   }
+
   #hero h1 {
     text-align: center; /* Centers text */
     display: block;
@@ -336,90 +374,88 @@ Medium devices (640px and larger)
   }
 
   .col-md-6 {
-  width: 50%;
+    width: 50%;
   }
 
   [class*="col-"] {
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
   }
 
-  #my-work h2{
+  #my-work h2 {
     text-align: center;
   }
 
-  #my-work h3{
+  #my-work h3 {
     text-align: left;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
-  .Tools h3{
+  .Tools h3 {
     width: 50%;
     margin: auto;
     text-align: left;
-    padding-left: 0px;
-
+    padding-left: 0;
   }
+
   .tools ul {
     width: 50%;
     margin: auto;
     text-align: left;
-    padding-left: 0px;
-    text-decoration-color: #519DDB;
+    padding-left: 0;
+    text-decoration-color: #519ddb;
   }
 
-  #about-breanna h3 { margin-top: 0;}
+  #about-breanna h3 {
+    margin-top: 0;
+  }
 
   #skills h3 {
     text-align: left;
     width: 50%;
     margin: auto;
-    text-align: left;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
-  #skills .row { padding-bottom: 10px; border-bottom: 0px solid #4a4a4a;
-    }
+  #skills .row {
+    padding-bottom: 10px;
+    border-bottom: 0 solid #4a4a4a;
+  }
 
-    .logo {
-      max-width: 250px;
-      background-color: #F8F8F8;
-      padding-top: 17px;
-    }
-
-    main {
-      padding-top: 104px;
-    }
+  main {
+    padding-top: 104px;
+  }
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
-    width: 60%
+    width: 60%;
   }
 
   .col-lg-5 {
-    width: 40%
+    width: 40%;
   }
 
   [class*="col-"] {
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
   }
 
   .container {
@@ -430,25 +466,23 @@ Large devices (1024px or larger)
 
   .logo {
     max-width: 250px;
-    background-color: #F8F8F8;
-    padding-top: 17px;
+    background-color: #f8f8f8;
+    padding-top: 0;
   }
-
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
   .logo {
     max-width: 250px;
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     padding-top: 17px;
   }
 }
 
-
-
-/* CSS Animation*/
+/* CSS Animation */
 .berlin-illustration {
   width: 100%;
   max-width: 100%;
@@ -456,9 +490,17 @@ X-large devices (1440px or larger)
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -470,8 +512,13 @@ X-large devices (1440px or larger)
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -483,8 +530,13 @@ X-large devices (1440px or larger)
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
