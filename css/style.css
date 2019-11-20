@@ -165,12 +165,12 @@ a.button:active {
 }
 
 .button.contact:hover {
-  background-color: #519ddb;
+  background-color: #277bbe;
   color: #fff !important;
 }
 
 .button.contact:focus {
-  color: #519ddb;
+  color: #277bbe;
   text-decoration: none;
 }
 
